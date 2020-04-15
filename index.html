@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>城市健康大脑</title>
+		<meta name="keywords" content="城市健康大脑" />
+		<meta name="description" content="城市健康大脑" />
+		<meta name="apple-mobile-web-app-title" content="城市健康大脑">
+		<meta name="format-detection" content="telephone=no">
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+		<link href="../../css/toker.css" rel="stylesheet" type="text/css"/>
+		<script src="../../js/jquery-1.9.1.min.js"></script>
+	</head>
+	<body>
+		<div id="time" style="font-size:0.14rem"></div>
+		<audio id="music" loop="loop" style="display: none;"></audio>
+		<div class="top">
+			<span class="shop">本活动由发起</span>
+			<img src="../../images/toker/icon-music.png" id="btn-music" class="icon-music on"/>
+		</div>
+		<div class="banner">
+			<img src="../../images/toker/banner.jpg" class="banner"/>
+		</div>
+		<div class="line"></div>
+		<div class="state">
+			<div class="apply-count">
+				<img src="../../images/toker/star.png" class="img-star"/>
+				<span>已有<strong>100</strong>人报名</span>
+				<img src="../../images/toker/star.png" class="img-star"/>
+			</div>
+			<div class="end-time">
+				<div class="e-t-title">————距活动结束————</div>
+				<div class="e-t-time" id="e-t-time">
+					<span class="day">20</span>天
+					<span class="hour">9</span>时
+					<span class="minute">45</span>分
+					<span class="second">6</span>秒
+				</div>
+			</div>
+			<div class="view-share">
+				<div class="view-amount">
+					浏览人数：<span><strong>100</strong>人</span>
+				</div>
+				<div class="share-amount">
+					分享次数：<span><strong>100</strong>次</span>
+				</div>
+			</div>
+		</div>
+		<div id="rank"></div>
+		<div class="rank">
+			<div class="rank-title">
+				<img src="../../images/toker/rank-title.png"/>
+			</div>
+			<div class="rank-index-list">
+				<div class="item">
+					<div class="avatar">
+						<img src="../../images/toker/banner.jpg"/>
+						<span class="num">2</span>
+					</div>
+					<div class="name">
+						张三
+					</div>
+					<div class="income">100元</div>
+				</div>
+				<div class="item">
+					<div class="avatar">
+						<img src="../../images/toker/banner.jpg"/>
+						<span class="num">1</span>
+					</div>
+					<div class="name">
+						张三
+					</div>
+					<div class="income">100元</div>
+				</div>
+				<div class="item">
+					<div class="avatar">
+						<img src="../../images/toker/banner.jpg"/>
+						<span class="num">3</span>
+					</div>
+					<div class="name">
+						张三
+					</div>
+					<div class="income">100元</div>
+				</div>
+			</div>
+			<div class="rank-my">
+				<div>
+					您已获得<strong>9</strong>元
+				</div>
+				<div>
+					排行第<strong>12</strong>名
+				</div>
+			</div>
+			<div class="rank-container">
+				<div class="header">
+					<div>排名</div>
+					<div>客户</div>
+					<div>获得红包</div>
+				</div>
+				
+				<div class="body" style="position:relative; height:5rem">
+					<div id="demo" style="position:absolute;width:100%;height: 4rem; overflow:hidden; text-align:center;margin:.5rem 0;">
+						<div id="demo1">
+							<div class="item">
+								<div class="left">
+									<span class="num">1</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">2</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">3</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">4</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">5</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">6</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="left">
+									<span class="num">7</span>
+								</div>
+								<div class="middle">
+									<img src="../../images/toker/banner.jpg" class="avatar"/>
+									<span class="name">1</span>
+								</div>
+								<div class="right">
+									<span class="income">100元</span>
+								</div>
+							</div>
+						</div>
+						<div id="demo2"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rule box">
+			<div class="rule-content">
+				○ 将本链接转发给您的朋友A，只要A抢购，您即可获得<strong>18.80</strong>元现金红红包，1秒到账!<br/>
+				○ 您的朋友A再次分享给他的朋友B，只要B抢购您还能再得<strong>6.66</strong>元现金红包!<br/>
+				○ 红包不设上限，只要您的人脉够广，千元红包任性赚...<br/>
+			</div>
+		</div>
+		<div class="detail box">
+			<img src="../../images/toker/banner.jpg"/>
+		</div>
+		<div class="step box">
+			<img src="../../images/toker/buy-step.jpg" class="buy-step"/>
+			<img src="../../images/toker/contact-qrcode.jpg" class="contact-qrcode"/>
+		</div>
+		<div class="circle box">
+			<img src="../../images/toker/share-circle-title.jpg" class="share-circle-title"/>
+			<div class="share-circle-day">
+				<div class="item">
+					<div class="diamond"></div>
+					<div class="dot"></div>
+					<div class="day">1天</div>
+				</div>
+				<div class="item">
+					<div class="diamond"></div>
+					<div class="dot"></div>
+					<div class="day">2天</div>
+				</div>
+				<div class="item">
+					<div class="diamond"></div>
+					<div class="dot"></div>
+					<div class="day">3天</div>
+				</div>
+			</div>
+			<div class="share-circle-rule">
+				<img src="../../images/toker/share-circle-rule.jpg"/>
+			</div>
+		</div>
+		<div class="record box">
+			<div class="title">
+				购买记录【<strong>100人</strong>】
+			</div>
+			
+			<div class="record-list">
+				<div class="item">
+					<div>
+						<img src="../../images/toker/banner.jpg" class="avatar"/>
+					</div>
+					<div><span class="name">姓名</span></div>
+					<div><span class="phone">188****0000</span></div>
+					<div class="right">
+						<div class="price">已支付￥100</div>
+						<div class="date">2019-10-10 12:23:30</div>
+					</div>
+				</div>
+				<div class="item">
+					<div>
+						<img src="../../images/toker/banner.jpg" class="avatar"/>
+					</div>
+					<div><span class="name">姓名</span></div>
+					<div><span class="phone">188****0000</span></div>
+					<div class="right">
+						<div class="price">已支付￥100</div>
+						<div class="date">2019-10-10 12:23:30</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="bottom">
+			<a class="btn btn-contact" href="tel:18957141280">
+				<img src="../../images/toker/icon-contact.png" class="btn-icon"/>
+				<span class="btn-text">客服电话</span>
+			</a>
+			<a class="btn btn-rank" href="#rank">
+				<img src="../../images/toker/icon-rank.png" class="btn-icon"/>
+				<span class="btn-text">红包排行</span>
+			</a>
+			<a class="btn-buy" onclick="onBridgeReady()">
+				<span>支付<strong>98.00元</strong>立即抢购</span>
+			</a>
+		</div>
+		
+		<!-- <div class="red-packet-container" id="close" style="display:none">
+			<img src="../../images/toker/red-packet-close.png"/>
+		</div>
+		<div class="red-packet-container" id="open">
+			<img src="../../images/toker/red-packet-open.png"/>
+			<div class="content">
+				<div class="money">10.00元</div>
+				<a class="btn-close" onclick="closePacket()">关闭</a>
+				<div class="tip">红包已存入微信零钱账户</div>
+			</div>
+		</div>
+		<div class="red-packet-bg"></div> -->
+	</body>
+</html>
+<script>
+	var redirectUri = encodeURI("https://text.csjkdn.com/wx/"+ 1 +"/getUser.jhtml"); // 授权接口地址
+			console.log("redirectUri",redirectUri)
+	$(function(){
+		TimeDown("show", "2020/02/21 8:10:00");
+		scroll()
+	})
+	//音乐
+	var c = document.getElementById("music");
+	c.src = "../../images/toker/bltf.mp3";
+	c.play();
+	//处理微信的时候
+	document.addEventListener("WeixinJSBridgeReady", function(){
+		if(typeof WeixinJSBridge == "object"){
+			WeixinJSBridge.invoke("getNetworkType", {}, function(j){
+				c.play();
+			})
+		}
+	});
+	music_state = 1;
+	//音乐按钮
+	$("#btn-music").on("click", function(){
+		if(music_state){
+			c.pause();
+			music_state = 0;
+			$("#btn-music").removeClass("on");
+		}else{
+			c.play();
+			music_state = 1;
+			$("#btn-music").addClass("on");
+		}
+	});
+	//倒计时
+	function TimeDown(id, endDateStr) {
+	    //结束时间
+	    var endDate = new Date(Date.parse(endDateStr.replace(/-/g, "/")));
+	    //当前时间
+	    var nowDate = new Date();
+		
+	    //相差的总秒数
+	    var totalSeconds = parseInt((endDate - nowDate) / 1000);
+		
+	    //天数
+	    var days = Math.floor(totalSeconds / (60 * 60 * 24));
+	    //取模（余数）
+	    var modulo = totalSeconds % (60 * 60 * 24);
+	    //小时数
+	    var hours = Math.floor(modulo / (60 * 60));
+	    modulo = modulo % (60 * 60);
+	    //分钟
+	    var minutes = Math.floor(modulo / 60);
+	    //秒
+	    var seconds = modulo % 60;
+	    //输出到页面
+		if(totalSeconds>0){
+			var result = '<span class="day">' + days + '</span>天' +
+						'<span class="hour">' + hours + '</span>时' +
+						'<span class="minute">' + minutes + '</span>分' +
+						'<span class="second">' + seconds + '</span>秒'
+			$("#e-t-time").html(result)
+			//延迟一秒执行自己
+			setTimeout(function () {
+			    TimeDown(id, endDateStr);
+			}, 1000)
+		}else{
+			var result = '<span class="day">0</span>天' +
+						'<span class="hour">0</span>时' +
+						'<span class="minute">0</span>分' +
+						'<span class="second">0</span>秒'
+			$("#e-t-time").html(result)
+		}
+	}
+	function scroll(){
+		var speed = 40
+		var demo = document.getElementById("demo");
+		var demo2 = document.getElementById("demo2");
+		var demo1 = document.getElementById("demo1");
+		demo2.innerHTML = demo1.innerHTML;
+		function Marquee() {
+			 if (demo2.offsetTop - demo.scrollTop <= 0) {
+				demo.scrollTop -= demo1.offsetHeight;
+			 } else {
+				demo.scrollTop++;
+			 }
+		}
+		var MyMar = setInterval(Marquee, speed);
+		/*
+		demo.onmouseover = function () { clearInterval(MyMar) }
+		demo.onmouseout = function () { MyMar = setInterval(Marquee, speed) }
+		*/
+	}
+	
+	
+	//关闭红包
+	function closePacket(){
+		$(".red-packet-bg").hide();
+		$(".red-packet-container").hide();
+	}
+</script>
